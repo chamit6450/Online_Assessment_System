@@ -139,7 +139,7 @@ function Test({email}) {
     const checkCameraStatus = async () => {
       try {
         // Attempt to access the user's camera
-        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio:true });
         
         if (stream && stream.getVideoTracks().length > 0) {
           setIsCameraOn(true);  // Camera is on
