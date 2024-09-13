@@ -9,7 +9,11 @@ function Home({email}) {
         <>
         <Header/>
      
+<<<<<<< HEAD
       {/* <div className="bg-blue-100 p-6 rounded-lg shadow-lg text-center">
+=======
+      <div className="bg-blue-100 p-6 rounded-lg shadow-lg text-center">
+>>>>>>> bf17880d97dc7541c282a4afbb17e9bc27a41ce8
       <h1 className="text-3xl font-bold text-blue-800 mb-4">Welcome to the Test Assessment</h1>
       <p className="text-lg text-gray-700 mb-4">
         We're excited to have you here!<br />
@@ -32,6 +36,7 @@ function Home({email}) {
           Start Test
         </button>
       </div>
+<<<<<<< HEAD
     </div> */}
 
 <p className="text-xl font-semibold text-gray-800 mb-6 border-t-2 ">
@@ -61,6 +66,9 @@ function Home({email}) {
 
 
 
+=======
+    </div>
+>>>>>>> bf17880d97dc7541c282a4afbb17e9bc27a41ce8
         </>
     );
 }

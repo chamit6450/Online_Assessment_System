@@ -22,6 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 
 node_modules
 
+=======
+>>>>>>> bf17880d97dc7541c282a4afbb17e9bc27a41ce8

@@ -8,11 +8,15 @@ function Signup() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
+<<<<<<< HEAD
   const [errors, setErrors] = useState({});
+=======
+>>>>>>> bf17880d97dc7541c282a4afbb17e9bc27a41ce8
 
   // useNavigate hook for navigation
   const navigate = useNavigate();
 
+<<<<<<< HEAD
   // Function to validate the form inputs
   const validateForm = () => {
     const newErrors = {};
@@ -45,6 +49,10 @@ function Signup() {
       return;
     }
 
+=======
+  // Function to handle user signup
+  const handleSignup = async () => {
+>>>>>>> bf17880d97dc7541c282a4afbb17e9bc27a41ce8
     try {
       // Send POST request to the signup API
       const response = await fetch("http://localhost:3000/signup", {
@@ -63,8 +71,12 @@ function Signup() {
         // If signup is successful, show an alert and navigate to the Auth page
         alert("Signup successful!");
         navigate('/');
+<<<<<<< HEAD
       } 
       else {
+=======
+      } else {
+>>>>>>> bf17880d97dc7541c282a4afbb17e9bc27a41ce8
         // If signup fails, show an error message
         const data = await response.json();
         alert(data.msg || "Signup failed. Please try again.");
@@ -84,7 +96,11 @@ function Signup() {
       {/* Main section for signup form */}
       <section className="bg-gray-50 dark:bg-gray-900">
         <div className="flex flex-col items-center justify-center px-6 py-4 mx-auto md:h-screen lg:py-0">
+<<<<<<< HEAD
           <div className="w-full bg-white rounded-lg shadow dark:border sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 mt-4 md:mt-0">
+=======
+          <div className="w-full bg-white rounded-lg shadow dark:border sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700 mt-4 md:mt-0"> {/* Reduced mt */}
+>>>>>>> bf17880d97dc7541c282a4afbb17e9bc27a41ce8
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                 Create an account
@@ -103,7 +119,10 @@ function Signup() {
                     required
                     onChange={(e) => setEmail(e.target.value)}
                   />
+<<<<<<< HEAD
                   {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
+=======
+>>>>>>> bf17880d97dc7541c282a4afbb17e9bc27a41ce8
                 </div>
                 <div>
                   <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -118,7 +137,10 @@ function Signup() {
                     required
                     onChange={(e) => setName(e.target.value)}
                   />
+<<<<<<< HEAD
                   {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
+=======
+>>>>>>> bf17880d97dc7541c282a4afbb17e9bc27a41ce8
                 </div>
                 <div>
                   <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -133,7 +155,10 @@ function Signup() {
                     required
                     onChange={(e) => setPassword(e.target.value)}
                   />
+<<<<<<< HEAD
                   {errors.password && <p className="text-red-500 text-sm">{errors.password}</p>}
+=======
+>>>>>>> bf17880d97dc7541c282a4afbb17e9bc27a41ce8
                 </div>
                 <button
                   type="button"
@@ -155,6 +180,10 @@ function Signup() {
       </section>
     </>
   );
+<<<<<<< HEAD
 }
 
+=======
+}  
+>>>>>>> bf17880d97dc7541c282a4afbb17e9bc27a41ce8
 export default Signup;
